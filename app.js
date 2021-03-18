@@ -47,6 +47,7 @@ mongoose.connect(URI,
 .then((res) => {
     // console.log('CONNECTED TO DATABASE');
     app.listen(PORT||8080);
+    app.send("api is working")
 })
 .catch((err) => {
     throw err;
